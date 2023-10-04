@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: statusquarkusio-vcwc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-xgyv-tenant/status-quarkus-io/statusquarkusio-vcwc@sha256:6f995336e6de47808a12a58895650ae9ffc5f733ddb006f10686ebe784241233
+        name: my-java-quarkus
+        resources: {}
+status: {}
